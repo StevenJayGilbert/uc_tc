@@ -134,6 +134,7 @@ function theme_uc_tc_termconditions_checkbox_label($link_path, $width, $height) 
   $link = t('terms and conditions');
   if ($link_path) {
     $link_path = drupal_get_normal_path($link_path);
+    $options = array();
     if (module_exists('lightbox2')) {
       $options['attributes']['rel'] = "lightframe[|width:{$width}px; height: {$height}px;]";
       $options['query']['format'] = 'lightbox2';
